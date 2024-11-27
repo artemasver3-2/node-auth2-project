@@ -31,7 +31,7 @@ function findById(user_id) {
       'u.username', 
       'r.role_name'
     )
-    .where('user_id', user_id)
+    .where('user_id', user_id).first()
 }
 
 /**
